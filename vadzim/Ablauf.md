@@ -7,24 +7,28 @@
 - [x] Folien: git & github
 - [x] VSCode Shortcuts
 
-## M | GETTING STARTED
+## M01 | GETTING STARTED
 
 - [x] Folien: react getting started
 - [x] Folien: nodejs getting started
 - [x] Folien: npx, npm, yarn
 - [ ] Demo
-- [ ] [Commit]
+- [x] [Commit](https://github.com/ppedvAG/2020-12-03-react-VC/commit/b284e8fa7606a79b1dab17b797cb2c7263c3fa6c)
 
-<!-- 
-## M | REACT PROJECT
+## M02 | REACT PROJECT
 
 - [ ] react ecosystem
 
 ## M | JSX INTRO
 
-- [ ] jsx/tsx intro
-- [ ] emmet
+- [x] jsx/tsx intro
+- [x] emmet
+- [x] attributes
+- [x] conditionals
+- [ ] Demo: Greeter
+- [ ] commit
 
+<!-- 
 ## M | REACT ELEMENTS
 
 - [ ] elements
@@ -38,8 +42,6 @@
 
 ## M | JSX CONTINUED
 
-- [ ] attributes
-- [ ] conditionals
 - [ ] iterating elements
 
 ## M | COMPONENTS AND STATE
