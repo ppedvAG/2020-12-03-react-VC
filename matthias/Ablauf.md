@@ -7,7 +7,6 @@
 - [x] Folien: git & github
 - [x] VSCode Shortcuts
 
-<!-- 
 ## M | GETTING STARTED
 
 - [ ] Folien: react getting started
@@ -16,6 +15,7 @@
 - [ ] Demo
 - [ ] Commit
 
+<!-- 
 ## M | REACT PROJECT
 
 - [ ] react ecosystem

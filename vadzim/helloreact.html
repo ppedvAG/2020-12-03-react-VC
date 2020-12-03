@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <style>
+        .big {
+            font-size: 2em;
+        }
+    </style>
+<title>React über CDN</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+        const el = React.createElement('p', {class: 'big'}, 'p als React Element');
+        console.log('el :>> ', el);
+        window.ReactDom.render(el, document.getElementById('root'));
+        /* todo #1 */        
+    </script>
+</body>
+</html>
