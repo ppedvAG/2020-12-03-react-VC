@@ -2,10 +2,10 @@
 
 ## M00 | WARMING UP
 
-- [ ] Folien: greeter
-- [ ] Folien: vs code
-- [ ] Folien: git & github
-- [ ] VSCode Shortcuts
+- [x] Folien: greeter
+- [x] Folien: vs code
+- [x] Folien: git & github
+- [x] VSCode Shortcuts
 
 <!-- 
 ## M | GETTING STARTED
