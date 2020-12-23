@@ -19,20 +19,20 @@
 
 - [ ] react ecosystem
 
-## M | JSX INTRO
+## M03 | JSX INTRO
 
 - [x] jsx/tsx intro
 - [x] emmet
 - [x] attributes
 - [x] conditionals
 - [ ] Demo: Greeter
-- [ ] commit
+- [ ] [commit](https://github.com/ppedvAG/2020-12-03-react-VC/commit/736880bc3aab5558b1e9de794ec5ce01996408a6)
 
-<!-- 
 ## M | REACT ELEMENTS
 
 - [ ] elements
 
+<!-- 
 ## M | FUNCTION COMPONENTS AND PROPS
 
 - [ ] components
@@ -65,6 +65,8 @@
 
 - [ ] lifting state up
 - [ ] specialization
+
+## M | ROUTING
 
 ## M | SSR
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Greeter from './Greeter';
+import Tsx from './Tsx';
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <Greeter />
+      <Tsx />
     </div>
   );
 }

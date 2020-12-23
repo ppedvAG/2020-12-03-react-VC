@@ -1,0 +1,13 @@
+/* todo #15 */
+.Card {
+    padding: 10px;
+    border: 5px solid;
+}
+
+.Card-blue {
+    border-color: blue;
+}
+
+.Card-red {
+    border-color: red;
+}
