@@ -26,9 +26,12 @@ function ReactElement() {
     /* todo #3 */
     return (
         <div>
-            <div>React Element: {el} </div>
+            <div>React Element: {el}</div>
             <div>cloned React Element: {el2} </div>
             <div>React.isValidElement(el2): {React.isValidElement(el2) ? 'true' : 'false'}</div>
+             {/* todo #6 */}
+            {/* <div>{el2.props.children}</div> */}
+
         </div>
     )
 }

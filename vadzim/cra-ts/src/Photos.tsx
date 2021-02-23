@@ -9,7 +9,7 @@ function Photos() {
   const [photosInState, setPhotosInState] = useState(neunPhotos);
 
   // Ursprüngliche Variante. Problem: Fotos werden ständig geholt, wie im Loop. Dabei ist die Komponente nur durch Routing-Link an die App angeschlossen.
-  // Vermutung: useEffect wird aufgeraufen nach ComponentDidUpdate
+  // Vermutung: useEffect wird aufgerufen nach ComponentDidUpdate
   // Docs: effects run for every render and not just once
   //
   // useEffect(() => {

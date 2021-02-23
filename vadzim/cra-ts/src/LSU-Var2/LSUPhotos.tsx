@@ -37,30 +37,11 @@ class LSUPhotos extends React.Component<any, any> {
     constructor(props: any) {
         super(props);
         this.state = {
-            neunPhotos: new Array<IPhoto>()
+            neunPhotos: props.photos
         }
         console.log('this.state.neunPhotos in ctor:>> ', this.state.neunPhotos);
     }
-    fetchPhotosAPI = () => {
-        fetch('http://jsonplaceholder.typicode.com/photos')
-            .then(response => response.json())
-            .then(json => {
-                console.log('json:', json)
-                return json
-            }
-            )
-            .then(arrFromJson => {
-                console.log('neunPhotos vor setState in fetch :>> ', this.state.neunPhotos);
-                this.setState({ neunPhotos: arrFromJson.slice(0, 9) });
-                console.log('neunPhotos nach setState in fetch :>> ', this.state.neunPhotos);
-            })
-    }
 
-    fetchPhotos = this.fetchPhotosAPI;
-
-    componentDidMount() {
-        this.fetchPhotos();
-    }
 
     // Warum der Event Handler nicht als normale Klassenmethode?
     // Punkt 1: in der klassische Methode bezieht sich das Wort this nicht auf die Klasse
@@ -121,13 +102,13 @@ class LSUPhotos extends React.Component<any, any> {
         // Aber warum wird mindestens nicht der alte State nach dem Fetchen ausgegeben?
     }
     render() {
-        console.log('this.state.neunPhotos in render :>> ', this.state.neunPhotos); // nach dem Change sind Photos undefined
-        // if (this.state.neunPhotos[1] === undefined) {
-        //     return <div>
-        //         muss gewartet werden
-        //     </div>
-        // }
-        // else {
+        console.log('this.state.neunPhotos in render :>> ', this.state.neunPhotos);
+        if (this.state.neunPhotos[1] === undefined) {
+            return <div>
+                muss gewartet werden
+            </div>
+        }
+        else {
             return (
                 <div id="container">
                     <p>photos as class</p>
@@ -140,7 +121,7 @@ class LSUPhotos extends React.Component<any, any> {
                 )}         */}
                 </div>
             )
-        // }
+        }
     }
 }
 export default LSUPhotos;

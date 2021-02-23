@@ -12,6 +12,7 @@ import PhotosAsClass from './PhotosAsClass';
 import MyPureComponent from './Pure-Component';
 import PWConfirm from './Forms';
 import LSUPhotos from './Lifting-State-Up/LSUPhotos'
+import LSUFetchPhotos from './LSU-Var2/LSUFetchPhotos'
 import CardParent from './Children';
 import AppWithRouting from './AppWithRouting';
 import Redux from './Redux';
@@ -21,17 +22,19 @@ import Redux from './Redux';
 const jsxEl = <p>JSX paragraph</p>;
 /* todo #5 */
 const compEl = React.createElement(ReactElement, jsxEl);
-// console.log('compEl :>> ', compEl);
+console.log('compEl :>> ', compEl);
+console.log('compEl.props :>> ', compEl.props);
+console.log('compEl.props.props :>> ', compEl.props.props);
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
-    {/* <ReactElement /> */}
-    {/* todo #6 */}
+    <ReactElement />
+   
     <h2>compEl</h2>
-    {/* {compEl}     */}
+    {compEl}    
     {/* todo #7 */}
     <h2>compEl.props.props.children</h2>
-    {/* {compEl.props.props.children} */}
+    {compEl.props.props.children}
     <h2>Component Props</h2>
     {/* <ComponentProps numberOfStars={5}/> */}
     <h2>Comp Props Übung</h2>
@@ -49,15 +52,16 @@ ReactDOM.render(
   <h2>Lebenszyklusmethoden</h2>
   {/* <LifecycleMethods forUpdate='force' /> */}
   <h2>Lebenszyklus Live Example</h2>
-  {/* <PhotosAsClass /> */}
+  <PhotosAsClass />
   <h2>Hooks</h2>
   {/* <Photos /> */}
   <h2>Pure Component</h2>
   {/* <MyPureComponent /> */}
   <h2>Forms</h2>
-  <PWConfirm />
+  {/* <PWConfirm /> */}
   <h2>Lifting State Up</h2>
-  <LSUPhotos />
+  {/* <LSUPhotos /> */}
+  {/* <LSUFetchPhotos /> */}
   <h2>Props.Children</h2>
   {/* <CardParent /> */}
   <h2>Redux</h2>

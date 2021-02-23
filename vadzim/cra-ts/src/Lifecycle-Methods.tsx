@@ -6,30 +6,30 @@ export default class LifecycleMethods extends React.Component<any, any> {
         this.state = {
             etwas: 'etwas'
         }
-       console.log("instanz erstellt");        
+        console.log("instanz erstellt");
     }
 
-    componentDidMount(){
+    componentDidMount() {
         console.log('didMount');
         // this.setState({etwas: 'etwas neues'});
         this.forceUpdate();
     }
 
-    componentDidUpdate(){
+    componentDidUpdate() {
+        // wird durch setState in forceUpdate aufgerufen
         console.log('didUpdate')
     }
 
-    forceUpdate(){
+    forceUpdate() {
         console.log('forced update')
-        this.setState({etwas: 'etwas neues'})
+        this.setState({ etwas: 'etwas neues' })
     }
 
-    render(){
-        return(
+    render() {
+        return (
             <div>
                 LifecycleMethods works
-        <p>this.props.forUpdate: {this.props.forUpdate}</p>
-     
+                <p>this.props.forUpdate: {this.props.forUpdate}</p>
             </div>
         )
     }
